@@ -6,12 +6,13 @@
 ### Project Storatge
 
 The project storage lives in `/project/umontana_fire_modeling`. Create a
-directory for your data at `/project/umontana_fire_modeling/$USER`. For me,
+directory for your data at `/project/umontana_fire_modeling/$USER`:
 
 ```sh
 [username@Atlas-login-1 ~]$ mkdir /project/umontana_fire_modeling/$USER
 ```
-creates a directory within our project dir that is the same as your username.
+This creates a directory within our project dir that is the same as your
+username.
 
 **NOTE: Data under `/project/` is not backed up**
 
@@ -53,6 +54,18 @@ You can now activate your new env with
 
 ```sh
 $ conda activate /project/umontana_fire_modeling/$USER/conda/envs/my_env
+```
+
+I have added the following to my `.bashrc`:
+
+```sh
+export CONDA_DIR="/project/umontana_fire_modeling/$USER/conda"
+```
+
+This allows me to more easily activate environments:
+
+```sh
+$ conda activate $CONDA_DIR/envs/my_env
 ```
 
 ## Atlas
