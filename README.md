@@ -1,5 +1,4 @@
 # SCINet Notes
-==============
 
 ## General
 ----------
